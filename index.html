@@ -17,6 +17,169 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header, nav, footer {
+      text-align: center;
+      background-color: #007bff;
+      color: white;
+      padding: 15px 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+    h1, h2 {
+      margin-bottom: 12px;
+    }
+    section {
+      margin-bottom: 40px;
+      background: white;
+      padding: 20px 25px;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
+    }
+    .service-item {
+      margin: 8px 0;
+      font-size: 1.1rem;
+    }
+    .contact-info {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+    .button-wrapper a {
+      text-decoration: none;
+      background-color: #007bff;
+      color: white;
+      padding: 12px 25px;
+      margin-right: 15px;
+      border-radius: 6px;
+      font-weight: 600;
+      display: inline-block;
+      box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+      transition: background-color 0.3s ease;
+    }
+    .button-wrapper a:hover {
+      background-color: #0056b3;
+    }
+
+    /* Feedback section styles */
+    /* Call buttons styling */
+    .call-buttons {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .call-btn {
+      display: inline-block;
+      background-color: #007bff;
+      color: white !important;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+      font-size: 16px;
+      box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+      transition: background-color 0.3s ease;
+    }
+    .call-btn:hover {
+      background-color: #0056b3;
+    }
+    @media (max-width: 480px) {
+      .call-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      .call-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    /* Feedback form table styles */
+    .feedback-table {
+      border-collapse: separate;
+      border-spacing: 12px 15px;
+      max-width: 600px;
+      width: 100%;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-family: 'Poppins', sans-serif;
+      margin: 0 auto;
+    }
+    .feedback-table td {
+      vertical-align: middle;
+    }
+    .feedback-table label {
+      font-weight: 600;
+      font-size: 16px;
+      color: #222;
+    }
+    .feedback-table input[type="text"],
+    .feedback-table input[type="email"],
+    .feedback-table textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1.5px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      resize: vertical;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+    .feedback-table input[type="text"]:focus,
+    .feedback-table input[type="email"]:focus,
+    .feedback-table textarea:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+    }
+    .feedback-table button[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    .feedback-table button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #007bff;
+      color: white;
+      padding: 15px 10px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -91,45 +254,21 @@
 
     <section class="feedback" id="feedback">
       <h2>Leave Your Feedback</h2>
+
+      <!-- Call Buttons above the form -->
+      <div class="call-buttons">
+        <a href="tel:6385255152" class="call-btn">Call Now (Main)</a>
+        <a href="tel:6385255152" class="call-btn">Call Now (Support)</a>
+        <a href="tel:6385255152" class="call-btn">Call Now (Service)</a>
+      </div>
+
+      <!-- Feedback form inside a styled table -->
       <form id="feedbackForm" action="https://formspree.io/f/xkgrkapb" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email (optional)" />
-        <textarea name="message" rows="5" placeholder="Your feedback..." required></textarea>
-        <button type="submit">Submit Feedback</button>
-      </form>
-    </section>
-
-    <section class="privacy" id="privacy">
-      <h2>Privacy Policy</h2>
-      <p>We respect your privacy. Any personal information submitted through our website or contact forms (such as name, phone number, or email) will only be used for the purpose of providing you with service and support. We do not share your data with any third parties. Our forms are powered by Formspree, which securely transmits your data.</p>
-    </section>
-  </div>
-
-  <footer>
-    &copy; 2025 SV HOME CARE | All Rights Reserved | Designed for your comfort and convenience
-  </footer>
-
-  <script>
-    const form = document.getElementById('feedbackForm');
-    form.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent default form submission
-
-      const formData = new FormData(form);
-
-      fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      }).then(response => {
-        if (response.ok) {
-          window.location.href = 'thankyou.html'; // Redirect to thankyou page
-        } else {
-          alert('Oops! There was a problem submitting your form.');
-        }
-      }).catch(() => {
-        alert('Oops! There was a problem submitting your form.');
-      });
-    });
-  </script>
-</body>
-</html>
+        <table class="feedback-table">
+          <tr>
+            <td><label for="name">Your Name <span style="color:#d00;">*</span></label></td>
+            <td><input type="text" id="name" name="name" placeholder="Enter your name" required /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Your Email</label></td>
+            <td><input type="email" id="email" name="email
