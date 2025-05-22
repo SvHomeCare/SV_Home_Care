@@ -2,273 +2,326 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SV HOME CARE - Washing Machine, AC, Fridge Service</title>
-  <meta name="description" content="SV HOME CARE offers expert 24/7 washing machine, fridge, and AC service in Coimbatore & Tirupur. Call 6385255152 for fast, reliable home appliance repair.">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17043071373"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-17043071373');
-  </script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-
+  <meta name="description" content="SV HOME CARE offers expert 24/7 washing machine, fridge, and AC service in Coimbatore & Tirupur. Call 6385255152 for fast, reliable home appliance repair." />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  
   <style>
-    body {
+    /* Reset */
+    * {
+      box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
-      background: #f9f9f9;
-      margin: 0;
-      padding: 0;
-      color: #333;
     }
-    header, nav, footer {
+    body {
+      margin: 0; 
+      background: #fafafa; 
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: #0a6d28;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background-color: #0a6d28;
+      color: #fff;
+      padding: 20px;
       text-align: center;
-      background-color: #007bff;
-      color: white;
-      padding: 15px 10px;
+    }
+    nav {
+      background: #e3f1de;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-weight: 600;
     }
     nav a {
-      color: white;
-      margin: 0 12px;
-      text-decoration: none;
+      color: #0a6d28;
       font-weight: 600;
     }
     nav a:hover {
-      text-decoration: underline;
+      color: #044a13;
     }
     .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 15px;
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 0 20px 60px;
+      position: relative;
     }
-    h1, h2 {
-      margin-bottom: 12px;
+    
+    /* Call Buttons at top */
+    .top-call-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
     }
+    .btn-call {
+      background-color: #0a6d28;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 16px;
+    }
+    .btn-call:hover {
+      background-color: #044a13;
+    }
+    .btn-whatsapp {
+      background-color: #25d366;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn-whatsapp:hover {
+      background-color: #1da851;
+    }
+
+    /* Sections */
     section {
       margin-bottom: 40px;
-      background: white;
-      padding: 20px 25px;
-      border-radius: 8px;
-      box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
     }
-    .service-item {
-      margin: 8px 0;
-      font-size: 1.1rem;
+    h2 {
+      color: #0a6d28;
+      margin-bottom: 12px;
+      font-weight: 700;
+      border-bottom: 2px solid #0a6d28;
+      padding-bottom: 6px;
     }
-    .contact-info {
-      font-size: 1rem;
-      margin-bottom: 15px;
+    p {
+      margin: 8px 0 0;
     }
-    .button-wrapper a {
-      text-decoration: none;
-      background-color: #007bff;
-      color: white;
-      padding: 12px 25px;
-      margin-right: 15px;
-      border-radius: 6px;
-      font-weight: 600;
-      display: inline-block;
-      box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
-      transition: background-color 0.3s ease;
-    }
-    .button-wrapper a:hover {
-      background-color: #0056b3;
-    }
-
-    /* Feedback section styles */
-    /* Call buttons styling */
-    .call-buttons {
-      margin-bottom: 20px;
+    
+    /* About section layout with call buttons on right */
+    .about {
       display: flex;
-      gap: 15px;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: flex-start;
       flex-wrap: wrap;
-      justify-content: center;
     }
-    .call-btn {
-      display: inline-block;
-      background-color: #007bff;
-      color: white !important;
-      padding: 12px 24px;
-      border-radius: 6px;
-      font-weight: 600;
-      font-family: 'Poppins', sans-serif;
-      text-decoration: none;
-      font-size: 16px;
-      box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
-      transition: background-color 0.3s ease;
+    .about-text {
+      flex: 1 1 60%;
+      min-width: 250px;
     }
-    .call-btn:hover {
-      background-color: #0056b3;
-    }
-    @media (max-width: 480px) {
-      .call-buttons {
-        flex-direction: column;
-        align-items: center;
-      }
-      .call-btn {
-        width: 100%;
-        text-align: center;
-      }
+    .about-call-buttons {
+      flex: 1 1 35%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-width: 200px;
     }
 
-    /* Feedback form table styles */
-    .feedback-table {
-      border-collapse: separate;
-      border-spacing: 12px 15px;
+    /* Feedback Form styling */
+    form#feedback-form {
       max-width: 600px;
-      width: 100%;
-      background: #fff;
+      margin-top: 20px;
+      border: 1px solid #0a6d28;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      font-family: 'Poppins', sans-serif;
-      margin: 0 auto;
+      background-color: #f9fff9;
     }
-    .feedback-table td {
-      vertical-align: middle;
-    }
-    .feedback-table label {
-      font-weight: 600;
-      font-size: 16px;
-      color: #222;
-    }
-    .feedback-table input[type="text"],
-    .feedback-table input[type="email"],
-    .feedback-table textarea {
+    form#feedback-form table {
       width: 100%;
-      padding: 10px;
-      border: 1.5px solid #ddd;
-      border-radius: 5px;
+      border-collapse: collapse;
+    }
+    form#feedback-form td {
+      padding: 10px 8px;
+      vertical-align: top;
+    }
+    form#feedback-form label {
+      font-weight: 600;
+      color: #0a6d28;
+    }
+    form#feedback-form input[type="text"],
+    form#feedback-form input[type="email"],
+    form#feedback-form textarea {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #0a6d28;
+      border-radius: 4px;
       font-size: 16px;
       font-family: 'Poppins', sans-serif;
       resize: vertical;
-      box-sizing: border-box;
+      background: #fff;
       transition: border-color 0.3s ease;
     }
-    .feedback-table input[type="text"]:focus,
-    .feedback-table input[type="email"]:focus,
-    .feedback-table textarea:focus {
-      border-color: #007bff;
+    form#feedback-form input[type="text"]:focus,
+    form#feedback-form input[type="email"]:focus,
+    form#feedback-form textarea:focus {
+      border-color: #25d366;
       outline: none;
-      box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+      background: #e8f7e8;
     }
-    .feedback-table button[type="submit"] {
-      background-color: #007bff;
+    form#feedback-form button[type="submit"] {
+      background-color: #0a6d28;
       color: white;
-      padding: 14px 28px;
+      font-weight: 700;
+      font-size: 18px;
       border: none;
+      padding: 12px 25px;
       border-radius: 5px;
       cursor: pointer;
-      font-weight: 600;
-      font-size: 16px;
       transition: background-color 0.3s ease;
+      margin-top: 8px;
+      float: right;
     }
-    .feedback-table button[type="submit"]:hover {
-      background-color: #0056b3;
+    form#feedback-form button[type="submit"]:hover {
+      background-color: #044a13;
+    }
+    
+    /* Contact info and buttons section */
+    .contact-info {
+      font-size: 16px;
+      margin-bottom: 12px;
+      color: #0a6d28;
+    }
+    .button-wrapper {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
     }
 
+    /* Footer */
     footer {
-      background-color: #007bff;
-      color: white;
-      padding: 15px 10px;
       text-align: center;
-      font-size: 0.9rem;
+      padding: 18px 10px;
+      background-color: #0a6d28;
+      color: white;
+      font-weight: 500;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .about {
+        flex-direction: column;
+      }
+      .about-call-buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+      form#feedback-form button[type="submit"] {
+        float: none;
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>SV HOME CARE</h1>
-    <p>Expert Washing Machine, Fridge & AC Service - Coimbatore & Tirupur</p>
-  </header>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#feedback">Feedback</a>
-    <a href="#privacy">Privacy Policy</a>
-  </nav>
-  <div class="container">
-    <section class="about">
+
+<header>
+  <h1>SV HOME CARE</h1>
+  <p>Expert Washing Machine, Fridge &amp; AC Service - Coimbatore &amp; Tirupur</p>
+</header>
+
+<!-- Top call buttons -->
+<div class="top-call-buttons">
+  <button class="btn-call" onclick="location.href='tel:6385255152'">Call Now (Main)</button>
+  <button class="btn-call" onclick="location.href='tel:6385255152'">Call Now (Support)</button>
+  <button class="btn-call" onclick="location.href='tel:6385255152'">Call Now (Service)</button>
+  <a href="https://wa.me/916385255152" target="_blank" class="btn-whatsapp">Message on WhatsApp</a>
+</div>
+
+<nav>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#feedback">Feedback</a>
+  <a href="#privacy">Privacy Policy</a>
+</nav>
+
+<div class="container">
+
+  <section class="about" id="about">
+    <div class="about-text">
       <h2>About Us</h2>
       <p><strong>SV HOME CARE</strong> is available 24/7 to provide expert service and repair for Washing Machines, Refrigerators, and Air Conditioners in <strong>Coimbatore</strong> and <strong>Tirupur</strong>. We ensure fast, honest, and affordable doorstep service for all your home appliance needs.</p>
-    </section>
+    </div>
+    <div class="about-call-buttons">
+      <button class="btn-call" onclick="location.href='tel:6385255152'">Call Now (Main)</button>
+      <button class="btn-call" onclick="location.href='tel:6385255152'">Call Now (Support)</button>
+      <button class="btn-call" onclick="location.href='tel:6385255152'">Call Now (Service)</button>
+      <a href="https://wa.me/916385255152" target="_blank" class="btn-whatsapp">WhatsApp</a>
+    </div>
+  </section>
 
-    <section id="front-load">
-      <h2>Front Load Washing Machine Service</h2>
-      <p>Expert repair and maintenance service for front-load washing machines. Quick, reliable, and affordable doorstep service.</p>
-    </section>
+  <section id="front-load">
+    <h2>Front Load Washing Machine Service</h2>
+    <p>Expert repair and maintenance service for front-load washing machines. Quick, reliable, and affordable doorstep service.</p>
+  </section>
 
-    <section id="top-load">
-      <h2>Top Load Washing Machine Service</h2>
-      <p>Specialized service for top-load machines including noise issues, drainage problems, and more. Most models supported.</p>
-    </section>
+  <section id="top-load">
+    <h2>Top Load Washing Machine Service</h2>
+    <p>Specialized service for top-load machines including noise issues, drainage problems, and more. Most models supported.</p>
+  </section>
 
-    <section id="doorstep">
-      <h2>24/7 Doorstep Appliance Service</h2>
-      <p>We come to your home! Same-day service available across Coimbatore and Tirupur for washing machines, refrigerators, and ACs.</p>
-    </section>
+  <section id="doorstep">
+    <h2>24/7 Doorstep Appliance Service</h2>
+    <p>We come to your home! Same-day service available across Coimbatore and Tirupur for washing machines, refrigerators, and ACs.</p>
+  </section>
 
-    <section id="coimbatore">
-      <h2>Washing Machine Service in Coimbatore</h2>
-      <p>Serving all areas in Coimbatore with expert technicians for fast and effective appliance repairs.</p>
-    </section>
+  <section id="coimbatore">
+    <h2>Washing Machine Service in Coimbatore</h2>
+    <p>Serving all areas in Coimbatore with expert technicians for fast and effective appliance repairs.</p>
+  </section>
 
-    <section id="tirupur">
-      <h2>Washing Machine Service in Tirupur</h2>
-      <p>Trusted home appliance repair specialists in Tirupur. Fast response and professional service.</p>
-    </section>
+  <section id="tirupur">
+    <h2>Washing Machine Service in Tirupur</h2>
+    <p>Trusted home appliance repair specialists in Tirupur. Fast response and professional service.</p>
+  </section>
 
-    <section class="services" id="services">
-      <h2>Our Services</h2>
-      <div class="service-item">✅ Washing Machine Service (Top Load / Front Load)</div>
-      <div class="service-item">✅ Refrigerator Repair, Cooling Issues, Gas Refill</div>
-      <div class="service-item">✅ AC Service, Installation, Gas Filling</div>
-      <div class="service-item">✅ 24/7 Emergency Home Service</div>
-    </section>
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div>✅ Washing Machine Service (Top Load / Front Load)</div>
+    <div>✅ Refrigerator Repair, Cooling Issues, Gas Refill</div>
+    <div>✅ AC Service, Installation, Gas Filling</div>
+    <div>✅ 24/7 Emergency Home Service</div>
+  </section>
 
-    <section class="contact" id="contact">
-      <h2>Contact Us</h2>
-      <div class="contact-info">
-        📞 <strong>Call / WhatsApp:</strong> <a href="tel:6385255152">6385255152</a><br>
-        📍 <strong>Location:</strong> Coimbatore, Tirupur<br>
-        ⏰ <strong>Open:</strong> 24 Hours / 7 Days
-      </div>
-      <div class="button-wrapper">
-        <a class="call-button" href="tel:6385255152">Call Now</a>
-        <a class="whatsapp-button" href="https://wa.me/916385255152" target="_blank">Message on WhatsApp</a>
-      </div>
-    </section>
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      📞 <strong>Call / WhatsApp:</strong> <a href="tel:6385255152">6385255152</a><br />
+      📍 <strong>Location:</strong> Coimbatore, Tirupur<br />
+      ⏰ <strong>Open:</strong> 24 Hours / 7 Days
+    </div>
+    <div class="button-wrapper">
+      <button class="btn-call" onclick="location.href='tel:6385255152'">Call Now</button>
+      <a href="https://wa.me/916385255152" target="_blank" class="btn-whatsapp">Message on WhatsApp</a>
+    </div>
+  </section>
 
-    <section class="reviews" id="reviews">
-      <h2>Customer Reviews</h2>
-      <p>⭐⭐⭐⭐⭐ “Excellent service. My fridge was fixed within an hour. Very professional.”</p>
-      <p>⭐⭐⭐⭐⭐ “Quick and affordable washing machine repair. Highly recommended!”</p>
-      <p>⭐⭐⭐⭐⭐ “Came on time and fixed my AC issue in one visit. Thank you!”</p>
-    </section>
+  <section class="reviews" id="reviews">
+    <h2>Customer Reviews</h2>
+    <p>⭐⭐⭐⭐⭐ “Excellent service. My fridge was fixed within an hour. Very professional.”</p>
+    <p>⭐⭐⭐⭐⭐ “Quick and affordable washing machine repair. Highly recommended!”</p>
+    <p>⭐⭐⭐⭐⭐ “Came on time and fixed my AC issue in one visit. Thank you!”</p>
+  </section>
 
-    <section class="feedback" id="feedback">
-      <h2>Leave Your Feedback</h2>
-
-      <!-- Call Buttons above the form -->
-      <div class="call-buttons">
-        <a href="tel:6385255152" class="call-btn">Call Now (Main)</a>
-        <a href="tel:6385255152" class="call-btn">Call Now (Support)</a>
-        <a href="tel:6385255152" class="call-btn">Call Now (Service)</a>
-      </div>
-
-      <!-- Feedback form inside a styled table -->
-      <form id="feedbackForm" action="https://formspree.io/f/xkgrkapb" method="POST">
-        <table class="feedback-table">
-          <tr>
-            <td><label for="name">Your Name <span style="color:#d00;">*</span></label></td>
-            <td><input type="text" id="name" name="name" placeholder="Enter your name" required /></td>
-          </tr>
-          <tr>
-            <td><label for="email">Your Email</label></td>
-            <td><input type="email" id="email" name="email
+  <section class="feedback" id="feedback">
+    <h2>Leave Your Feedback</h2>
+    <form action="
