@@ -2,326 +2,190 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SV HOME CARE - Washing Machine, AC, Fridge Service</title>
-  <meta name="description" content="SV HOME CARE offers expert 24/7 washing machine, fridge, and AC service in Coimbatore & Tirupur. Call 6385255152 for fast, reliable home appliance repair." />
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  
+  <meta name="description" content="SV HOME CARE offers expert 24/7 washing machine, fridge, and AC service in Coimbatore & Tirupur. Call 6385255152 for fast, reliable home appliance repair.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    /* Reset */
-    * {
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
     body {
-      margin: 0; 
-      background: #fafafa; 
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
       color: #333;
-      line-height: 1.6;
-    }
-    a {
-      text-decoration: none;
-      color: #0a6d28;
-    }
-    a:hover {
-      text-decoration: underline;
     }
     header {
-      background-color: #0a6d28;
-      color: #fff;
+      background: #0077cc;
+      color: white;
       padding: 20px;
       text-align: center;
     }
     nav {
-      background: #e3f1de;
-      padding: 12px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      font-weight: 600;
+      background: #005fa3;
+      padding: 10px;
+      text-align: center;
     }
     nav a {
-      color: #0a6d28;
-      font-weight: 600;
-    }
-    nav a:hover {
-      color: #044a13;
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
     }
     .container {
-      max-width: 1100px;
-      margin: 20px auto;
-      padding: 0 20px 60px;
-      position: relative;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
     }
-    
-    /* Call Buttons at top */
-    .top-call-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-bottom: 20px;
-    }
-    .btn-call {
-      background-color: #0a6d28;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 5px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      border: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 16px;
-    }
-    .btn-call:hover {
-      background-color: #044a13;
-    }
-    .btn-whatsapp {
-      background-color: #25d366;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 5px;
-      font-weight: 700;
-      cursor: pointer;
-      border: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 16px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-    .btn-whatsapp:hover {
-      background-color: #1da851;
-    }
-
-    /* Sections */
     section {
       margin-bottom: 40px;
     }
     h2 {
-      color: #0a6d28;
-      margin-bottom: 12px;
-      font-weight: 700;
-      border-bottom: 2px solid #0a6d28;
-      padding-bottom: 6px;
+      color: #005fa3;
     }
-    p {
-      margin: 8px 0 0;
+    .button-wrapper a, .feedback-form button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px 5px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 500;
     }
-    
-    /* About section layout with call buttons on right */
-    .about {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      align-items: flex-start;
-      flex-wrap: wrap;
+    .call-button {
+      background-color: #0077cc;
+      color: white;
     }
-    .about-text {
-      flex: 1 1 60%;
-      min-width: 250px;
+    .whatsapp-button {
+      background-color: #25D366;
+      color: white;
     }
-    .about-call-buttons {
-      flex: 1 1 35%;
+    .feedback-form {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      min-width: 200px;
-    }
-
-    /* Feedback Form styling */
-    form#feedback-form {
+      gap: 10px;
       max-width: 600px;
-      margin-top: 20px;
-      border: 1px solid #0a6d28;
-      padding: 20px;
-      border-radius: 8px;
-      background-color: #f9fff9;
     }
-    form#feedback-form table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    form#feedback-form td {
-      padding: 10px 8px;
-      vertical-align: top;
-    }
-    form#feedback-form label {
-      font-weight: 600;
-      color: #0a6d28;
-    }
-    form#feedback-form input[type="text"],
-    form#feedback-form input[type="email"],
-    form#feedback-form textarea {
-      width: 100%;
-      padding: 8px 10px;
-      border: 1px solid #0a6d28;
-      border-radius: 4px;
-      font-size: 16px;
-      font-family: 'Poppins', sans-serif;
-      resize: vertical;
-      background: #fff;
-      transition: border-color 0.3s ease;
-    }
-    form#feedback-form input[type="text"]:focus,
-    form#feedback-form input[type="email"]:focus,
-    form#feedback-form textarea:focus {
-      border-color: #25d366;
-      outline: none;
-      background: #e8f7e8;
-    }
-    form#feedback-form button[type="submit"] {
-      background-color: #0a6d28;
-      color: white;
-      font-weight: 700;
-      font-size: 18px;
-      border: none;
-      padding: 12px 25px;
+    .feedback-form input, .feedback-form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
       border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      margin-top: 8px;
-      float: right;
-    }
-    form#feedback-form button[type="submit"]:hover {
-      background-color: #044a13;
-    }
-    
-    /* Contact info and buttons section */
-    .contact-info {
       font-size: 16px;
-      margin-bottom: 12px;
-      color: #0a6d28;
     }
-    .button-wrapper {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 18px 10px;
-      background-color: #0a6d28;
+    .feedback-form button {
+      background-color: #0077cc;
       color: white;
-      font-weight: 500;
-      font-size: 14px;
-      margin-top: 40px;
+      border: none;
+      cursor: pointer;
     }
-
-    /* Responsive */
-    @media (max-width: 700px) {
-      .about {
-        flex-direction: column;
-      }
-      .about-call-buttons {
-        flex-direction: row;
-        justify-content: center;
-      }
-      form#feedback-form button[type="submit"] {
-        float: none;
-        width: 100%;
-      }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+    .about + .button-wrapper {
+      margin-top: -20px;
+      margin-bottom: 20px;
+      text-align: right;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>SV HOME CARE</h1>
+    <p>Expert Washing Machine, Fridge & AC Service - Coimbatore & Tirupur</p>
+  </header>
 
-<header>
-  <h1>SV HOME CARE</h1>
-  <p>Expert Washing Machine, Fridge &amp; AC Service - Coimbatore &amp; Tirupur</p>
-</header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#privacy">Privacy Policy</a>
+  </nav>
 
-<!-- Top call buttons -->
-<div class="top-call-buttons">
-  <button class="btn-call" onclick="location.href='tel:6385255152'">Call Now (Main)</button>
-  <button class="btn-call" onclick="location.href='tel:6385255152'">Call Now (Support)</button>
-  <button class="btn-call" onclick="location.href='tel:6385255152'">Call Now (Service)</button>
-  <a href="https://wa.me/916385255152" target="_blank" class="btn-whatsapp">Message on WhatsApp</a>
-</div>
-
-<nav>
-  <a href="#services">Services</a>
-  <a href="#contact">Contact</a>
-  <a href="#reviews">Reviews</a>
-  <a href="#feedback">Feedback</a>
-  <a href="#privacy">Privacy Policy</a>
-</nav>
-
-<div class="container">
-
-  <section class="about" id="about">
-    <div class="about-text">
+  <div class="container">
+    <section class="about">
       <h2>About Us</h2>
       <p><strong>SV HOME CARE</strong> is available 24/7 to provide expert service and repair for Washing Machines, Refrigerators, and Air Conditioners in <strong>Coimbatore</strong> and <strong>Tirupur</strong>. We ensure fast, honest, and affordable doorstep service for all your home appliance needs.</p>
-    </div>
-    <div class="about-call-buttons">
-      <button class="btn-call" onclick="location.href='tel:6385255152'">Call Now (Main)</button>
-      <button class="btn-call" onclick="location.href='tel:6385255152'">Call Now (Support)</button>
-      <button class="btn-call" onclick="location.href='tel:6385255152'">Call Now (Service)</button>
-      <a href="https://wa.me/916385255152" target="_blank" class="btn-whatsapp">WhatsApp</a>
-    </div>
-  </section>
+    </section>
 
-  <section id="front-load">
-    <h2>Front Load Washing Machine Service</h2>
-    <p>Expert repair and maintenance service for front-load washing machines. Quick, reliable, and affordable doorstep service.</p>
-  </section>
-
-  <section id="top-load">
-    <h2>Top Load Washing Machine Service</h2>
-    <p>Specialized service for top-load machines including noise issues, drainage problems, and more. Most models supported.</p>
-  </section>
-
-  <section id="doorstep">
-    <h2>24/7 Doorstep Appliance Service</h2>
-    <p>We come to your home! Same-day service available across Coimbatore and Tirupur for washing machines, refrigerators, and ACs.</p>
-  </section>
-
-  <section id="coimbatore">
-    <h2>Washing Machine Service in Coimbatore</h2>
-    <p>Serving all areas in Coimbatore with expert technicians for fast and effective appliance repairs.</p>
-  </section>
-
-  <section id="tirupur">
-    <h2>Washing Machine Service in Tirupur</h2>
-    <p>Trusted home appliance repair specialists in Tirupur. Fast response and professional service.</p>
-  </section>
-
-  <section class="services" id="services">
-    <h2>Our Services</h2>
-    <div>✅ Washing Machine Service (Top Load / Front Load)</div>
-    <div>✅ Refrigerator Repair, Cooling Issues, Gas Refill</div>
-    <div>✅ AC Service, Installation, Gas Filling</div>
-    <div>✅ 24/7 Emergency Home Service</div>
-  </section>
-
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-info">
-      📞 <strong>Call / WhatsApp:</strong> <a href="tel:6385255152">6385255152</a><br />
-      📍 <strong>Location:</strong> Coimbatore, Tirupur<br />
-      ⏰ <strong>Open:</strong> 24 Hours / 7 Days
-    </div>
     <div class="button-wrapper">
-      <button class="btn-call" onclick="location.href='tel:6385255152'">Call Now</button>
-      <a href="https://wa.me/916385255152" target="_blank" class="btn-whatsapp">Message on WhatsApp</a>
+      <a class="call-button" href="tel:6385255152">Call Now</a>
+      <a class="whatsapp-button" href="https://wa.me/916385255152" target="_blank">Message on WhatsApp</a>
     </div>
-  </section>
 
-  <section class="reviews" id="reviews">
-    <h2>Customer Reviews</h2>
-    <p>⭐⭐⭐⭐⭐ “Excellent service. My fridge was fixed within an hour. Very professional.”</p>
-    <p>⭐⭐⭐⭐⭐ “Quick and affordable washing machine repair. Highly recommended!”</p>
-    <p>⭐⭐⭐⭐⭐ “Came on time and fixed my AC issue in one visit. Thank you!”</p>
-  </section>
+    <section id="front-load">
+      <h2>Front Load Washing Machine Service</h2>
+      <p>Expert repair and maintenance service for front-load washing machines. Quick, reliable, and affordable doorstep service.</p>
+    </section>
 
-  <section class="feedback" id="feedback">
-    <h2>Leave Your Feedback</h2>
-    <form action="
+    <section id="top-load">
+      <h2>Top Load Washing Machine Service</h2>
+      <p>Specialized service for top-load machines including noise issues, drainage problems, and more. Most models supported.</p>
+    </section>
+
+    <section id="doorstep">
+      <h2>24/7 Doorstep Appliance Service</h2>
+      <p>We come to your home! Same-day service available across Coimbatore and Tirupur for washing machines, refrigerators, and ACs.</p>
+    </section>
+
+    <section id="coimbatore">
+      <h2>Washing Machine Service in Coimbatore</h2>
+      <p>Serving all areas in Coimbatore with expert technicians for fast and effective appliance repairs.</p>
+    </section>
+
+    <section id="tirupur">
+      <h2>Washing Machine Service in Tirupur</h2>
+      <p>Trusted home appliance repair specialists in Tirupur. Fast response and professional service.</p>
+    </section>
+
+    <section class="services" id="services">
+      <h2>Our Services</h2>
+      <div class="service-item">✅ Washing Machine Service (Top Load / Front Load)</div>
+      <div class="service-item">✅ Refrigerator Repair, Cooling Issues, Gas Refill</div>
+      <div class="service-item">✅ AC Service, Installation, Gas Filling</div>
+      <div class="service-item">✅ 24/7 Emergency Home Service</div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        📞 <strong>Call / WhatsApp:</strong> <a href="tel:6385255152">6385255152</a><br>
+        📍 <strong>Location:</strong> Coimbatore, Tirupur<br>
+        ⏰ <strong>Open:</strong> 24 Hours / 7 Days
+      </div>
+      <div class="button-wrapper">
+        <a class="call-button" href="tel:6385255152">Call Now</a>
+        <a class="whatsapp-button" href="https://wa.me/916385255152" target="_blank">Message on WhatsApp</a>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <h2>Customer Reviews</h2>
+      <p>⭐⭐⭐⭐⭐ “Excellent service. My fridge was fixed within an hour. Very professional.”</p>
+      <p>⭐⭐⭐⭐⭐ “Quick and affordable washing machine repair. Highly recommended!”</p>
+      <p>⭐⭐⭐⭐⭐ “Came on time and fixed my AC issue in one visit. Thank you!”</p>
+    </section>
+
+    <section class="feedback" id="feedback">
+      <h2>Leave Your Feedback</h2>
+      <form class="feedback-form" action="https://formspree.io/f/xkgrkapb" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email (optional)" />
+        <textarea name="message" rows="5" placeholder="Your feedback..." required></textarea>
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </section>
+
+    <section class="privacy" id="privacy">
+      <h2>Privacy Policy</h2>
+      <p>We respect your privacy. Any personal information submitted through our website or contact forms (such as name, phone number, or email) will only be used for the purpose of providing you with service and support. We do not share your data with any third parties. Our forms are powered by Formspree, which securely transmits your data.</p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 SV HOME CARE | All Rights Reserved | Designed for your comfort and convenience
+  </footer>
+</body>
+</html>
