@@ -6,81 +6,89 @@
   <title>SV HOME CARE - Washing Machine, AC, Fridge Service</title>
   <meta name="description" content="SV HOME CARE offers expert 24/7 washing machine, fridge, and AC service in Coimbatore & Tirupur. Call 6385255152 for fast, reliable home appliance repair.">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background: #f8f9fa;
       color: #333;
     }
-    header {
-      background-color: #2c3e50;
+
+    header, footer {
+      background-color: #007f5f;
       color: white;
-      text-align: center;
       padding: 20px;
+      text-align: center;
     }
+
     nav {
-      background-color: #34495e;
+      background-color: #009688;
       padding: 10px;
       text-align: center;
     }
+
     nav a {
       color: white;
       margin: 0 10px;
       text-decoration: none;
       font-weight: 500;
     }
+
     .container {
       padding: 20px;
       max-width: 1000px;
       margin: auto;
     }
+
     section {
       margin-bottom: 40px;
     }
-    .button-wrapper, .about-buttons {
-      margin-top: 15px;
-    }
+
     .call-button, .whatsapp-button {
       display: inline-block;
-      padding: 10px 20px;
-      margin-right: 10px;
-      border-radius: 5px;
-      color: white;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    .call-button {
+      margin: 10px 10px 0 0;
+      padding: 12px 20px;
       background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
     }
+
     .whatsapp-button {
       background-color: #25d366;
     }
-    .feedback-form input, .feedback-form textarea {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-family: inherit;
+
+    .feedback-form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
+
+    .feedback-form input,
+    .feedback-form textarea,
     .feedback-form button {
-      padding: 10px 25px;
-      background-color: #3498db;
-      color: white;
-      font-weight: bold;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
     }
-    footer {
-      background: #2c3e50;
+
+    .feedback-form button {
+      background-color: #007f5f;
       color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9rem;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .about .button-wrapper {
+      margin-top: 15px;
     }
   </style>
 </head>
@@ -99,79 +107,51 @@
   </nav>
 
   <div class="container">
+
     <section class="about">
       <h2>About Us</h2>
       <p><strong>SV HOME CARE</strong> is available 24/7 to provide expert service and repair for Washing Machines, Refrigerators, and Air Conditioners in <strong>Coimbatore</strong> and <strong>Tirupur</strong>. We ensure fast, honest, and affordable doorstep service for all your home appliance needs.</p>
-      <div class="about-buttons">
-        <a class="call-button" href="tel:6385255152">Call Now</a>
-        <a class="whatsapp-button" href="https://wa.me/916385255152" target="_blank">WhatsApp Us</a>
-      </div>
-    </section>
-
-    <section id="front-load">
-      <h2>Front Load Washing Machine Service</h2>
-      <p>Expert repair and maintenance service for front-load washing machines. Quick, reliable, and affordable doorstep service.</p>
-    </section>
-
-    <section id="top-load">
-      <h2>Top Load Washing Machine Service</h2>
-      <p>Specialized service for top-load machines including noise issues, drainage problems, and more. Most models supported.</p>
-    </section>
-
-    <section id="doorstep">
-      <h2>24/7 Doorstep Appliance Service</h2>
-      <p>We come to your home! Same-day service available across Coimbatore and Tirupur for washing machines, refrigerators, and ACs.</p>
-    </section>
-
-    <section id="coimbatore">
-      <h2>Washing Machine Service in Coimbatore</h2>
-      <p>Serving all areas in Coimbatore with expert technicians for fast and effective appliance repairs.</p>
-    </section>
-
-    <section id="tirupur">
-      <h2>Washing Machine Service in Tirupur</h2>
-      <p>Trusted home appliance repair specialists in Tirupur. Fast response and professional service.</p>
-    </section>
-
-    <section class="services" id="services">
-      <h2>Our Services</h2>
-      <div>✅ Washing Machine Service (Top Load / Front Load)</div>
-      <div>✅ Refrigerator Repair, Cooling Issues, Gas Refill</div>
-      <div>✅ AC Service, Installation, Gas Filling</div>
-      <div>✅ 24/7 Emergency Home Service</div>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2>Contact Us</h2>
-      <div>
-        📞 <strong>Call / WhatsApp:</strong> <a href="tel:6385255152">6385255152</a><br>
-        📍 <strong>Location:</strong> Coimbatore, Tirupur<br>
-        ⏰ <strong>Open:</strong> 24 Hours / 7 Days
-      </div>
       <div class="button-wrapper">
         <a class="call-button" href="tel:6385255152">Call Now</a>
         <a class="whatsapp-button" href="https://wa.me/916385255152" target="_blank">Message on WhatsApp</a>
       </div>
     </section>
 
-    <section class="reviews" id="reviews">
+    <section id="services">
+      <h2>Our Services</h2>
+      <p>✅ Washing Machine Service (Top Load / Front Load)<br>
+         ✅ Refrigerator Repair, Cooling Issues, Gas Refill<br>
+         ✅ AC Service, Installation, Gas Filling<br>
+         ✅ 24/7 Emergency Home Service</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>📞 <strong>Call / WhatsApp:</strong> <a href="tel:6385255152">6385255152</a><br>
+         📍 <strong>Location:</strong> Coimbatore, Tirupur<br>
+         ⏰ <strong>Open:</strong> 24 Hours / 7 Days</p>
+      <a class="call-button" href="tel:6385255152">Call Now</a>
+      <a class="whatsapp-button" href="https://wa.me/916385255152" target="_blank">WhatsApp Us</a>
+    </section>
+
+    <section id="reviews">
       <h2>Customer Reviews</h2>
       <p>⭐⭐⭐⭐⭐ “Excellent service. My fridge was fixed within an hour. Very professional.”</p>
       <p>⭐⭐⭐⭐⭐ “Quick and affordable washing machine repair. Highly recommended!”</p>
       <p>⭐⭐⭐⭐⭐ “Came on time and fixed my AC issue in one visit. Thank you!”</p>
     </section>
 
-    <section class="feedback" id="feedback">
+    <section id="feedback">
       <h2>Leave Your Feedback</h2>
-      <form class="feedback-form" action="https://formspree.io/f/xkgrkapb" method="POST" id="feedbackForm">
+      <form class="feedback-form" action="https://formspree.io/f/xkgrkapb" method="POST">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email (optional)" />
-        <textarea name="message" rows="5" placeholder="Your feedback..." required></textarea>
+        <textarea name="message" placeholder="Your feedback..." rows="5" required></textarea>
         <button type="submit">Submit Feedback</button>
       </form>
     </section>
 
-    <section class="privacy" id="privacy">
+    <section id="privacy">
       <h2>Privacy Policy</h2>
       <p>We respect your privacy. Any personal information submitted through our website or contact forms (such as name, phone number, or email) will only be used for the purpose of providing you with service and support. We do not share your data with any third parties. Our forms are powered by Formspree, which securely transmits your data.</p>
     </section>
@@ -180,27 +160,5 @@
   <footer>
     &copy; 2025 SV HOME CARE | All Rights Reserved | Designed for your comfort and convenience
   </footer>
-
-  <script>
-    document.getElementById("feedbackForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-      const form = e.target;
-      const formData = new FormData(form);
-
-      fetch(form.action, {
-        method: "POST",
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      }).then(response => {
-        if (response.ok) {
-          window.location.href = "thankyou.html";
-        } else {
-          alert("Something went wrong. Please try again.");
-        }
-      }).catch(() => {
-        alert("Something went wrong. Please try again.");
-      });
-    });
-  </script>
 </body>
 </html>
