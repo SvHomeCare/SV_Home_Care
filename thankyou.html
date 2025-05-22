@@ -2,21 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Thank You - SV HOME CARE</title>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17043071373"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-17043071373');
-    gtag('event', 'conversion', {'send_to': 'AW-17043071373/1AS0COvl1ssaEI3D4r4_'});
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 100px auto;
+      background: #fff;
+      padding: 40px 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+    h1 {
+      color: #2ecc71;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .home-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+    .home-btn:hover {
+      background-color: #2980b9;
+    }
+  </style>
 </head>
 <body>
-  <h1>Thank You for Your Feedback!</h1>
-  <p>We appreciate you taking the time to contact us. We will get back to you shortly.</p>
-  <a href="index.html">Return to Home</a>
+  <div class="container">
+    <h1>Thank You!</h1>
+    <p>Your feedback has been submitted successfully. We’ll get back to you as soon as possible.</p>
+    <a href="index.html" class="home-btn">Return to Home</a>
+  </div>
 </body>
 </html>
